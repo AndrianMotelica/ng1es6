@@ -5,11 +5,13 @@
   "author": "First Last <first.last@example.com>",
   "main": "server.js",
   "scripts": {
-    "babel" : "babel --presets es2015",
-    "webpack": "webpack"
+    "babel": "babel --presets es2015",
+    "webpack": "webpack",
+    "webpack-watch": "webpack --watch-stdin"
   },
   "devDependencies": {
     "babel-loader": "^7.1.2",
+    "html-loader": "^0.5.1",
     "webpack": "^3.8.1"
   }
 }
