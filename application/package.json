@@ -1,0 +1,15 @@
+{
+  "name": "docker_web_app",
+  "version": "1.0.0",
+  "description": "Node.js on Docker",
+  "author": "First Last <first.last@example.com>",
+  "main": "server.js",
+  "scripts": {
+    "babel" : "babel --presets es2015",
+    "webpack": "webpack"
+  },
+  "devDependencies": {
+    "babel-loader": "^7.1.2",
+    "webpack": "^3.8.1"
+  }
+}
