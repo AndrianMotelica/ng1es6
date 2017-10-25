@@ -1,11 +1,11 @@
-export default class PokemonService
+export default class CoindeskService
 {
     constructor($http) {
         this.$http = $http;
-        this.apiUrl = 'https://raw.githubusercontent.com/PokemonGOAPI/PokemonDataGraber/master/output.json';
+        this.apiUrl = 'https://api.coindesk.com/v1/bpi/historical/close.json';
     }
 
-    getPokemons() {
+    getData() {
         return this.$http
             .get(this.apiUrl)
             .then(function (response) {
