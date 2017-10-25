@@ -1,3 +1,5 @@
-<ul id="pokemon-list">
-  <li ng-repeat="coin in $ctrl.coins">{{coin}}</li>
+<ul id="closing-currency">
+  <li ng-repeat="(closingDate, price) in $ctrl.coins.bpi">
+    <b>{{closingDate|date:"MMM d, y"}}</b>: <i>${{price}}</i>
+  </li>
 </ul>
